@@ -1,0 +1,159 @@
+ *{
+    margin: 0; /* Remove todas as margens padrão */
+    padding: 0; /* Remove os preenchimentos internos padrão */
+    box-sizing: border-box; /* Garante que a largura e altura dos elementos incluam a borda */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto da página */
+} 
+
+/*NAVBAR ON INDEX.HTML NAV PART*/
+    .bng-navbar {
+    background-color: #343a40;
+    display: flex; /* Alinha os elementos em linha */
+    align-items: center;/* Centraliza os itens verticalmente */
+    justify-content: space-between;/* Distribui os itens igualmente */
+    padding: 10px 20px;/* Adiciona espaçamento interno */
+    }
+    .bng-navbar div {
+    display: flex;
+    align-items: center;
+    }
+    .bng-navbar img {
+    height: 50px; /* Ajusta a altura do logo */
+    margin-right: 10px;/* Adiciona espaço entre o logo e o texto */
+    }
+    .bng-navbar h3 {
+    font-size: 1.5em; /* Define o tamanho do texto */
+    color: #dddddd; /* Cor do texto em cinza claro */
+    } 
+
+/*  MENU CENTRAL ON INDEX.HTML LINKS CENTRAIS PART */
+    .container-navegacao{
+        text-align: center; /*centers the links*/
+        padding: 20px; /*adds internal spacing*/
+    }
+    .container-navegacao a {
+        font-size: 1 em;
+        margin: 0px 50px; /*adds horizontal spacing between the links */
+        text-decoration: none; /*removes the underline*/
+        color: #dddddd; /*defines link color */
+    }
+    .container-navegacao a:hover {
+        color:#ffffff; /*changes the text color when you hover the mouse over it */
+        transition: 0.3s; /*added by me, since the color change isnt big, the transition time is negligeble and useless since its hard to spot */
+    }
+
+/* AREA Cliente ON INDEX.HTML*/
+    .nav-cliente a {
+        color: #dddddd; /* Cor do texto */
+        text-decoration: none; /* Remove sublinhado */
+        font-size: 1.5em; /* Tamanho da fonte */
+        padding: 10px; /* Espaçamento interno */
+        border-radius: 5px; /* Bordas arredondadas */
+        transition: background 0.3s /* Efeito suave na transição de cor quando dás hover neste caso*/
+    }
+    .nav-cliente a:hover {
+        background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    }
+
+/*FOOTER*/
+    .footer-container {
+        display: flex; /* Ativa o layout flexível */
+        background-color: #343a40; /* Cor de fundo escura */
+        color: white; /* Cor do texto */
+        padding: 40px 20px; /* Espaçamento interno */
+        flex-wrap: wrap; /* Permite que os itens fiquem responsivos */
+    }
+    .footer-section {
+        flex: 1; /* Faz com que as seções tenham tamanhos iguais */
+        min-width: 250px; /* Garante que cada seção tenha um tamanho mínimo */
+        padding: 10px; /* Espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+    }
+    .footer-section strong {
+        font-size: 1.2rem; /* Define o tamanho da fonte dos títulos */
+        display: block; /* Faz com que ocupe toda a largura */
+        margin-bottom: 10px; /* Adiciona um espaço abaixo do título */
+        color: #f8f9fa; /* Cor do texto */
+    }
+    .footer-section p {
+        font-size: 1rem; /* Define o tamanho da fonte dos parágrafos */
+        color: #d6d6d6; /* Cor do texto mais suave */
+    } 
+
+/* Texto Genérico */
+    .container-texto-generico {
+        display: flex; /* Ativa o layout flexível */
+        justify-content: center; /* Centraliza os elementos horizontalmente */
+        flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+        gap: 20px; /* Adiciona espaço entre os elementos */
+        padding: 40px; /* Espaçamento interno para melhor organização */
+        text-align: center; /* Centraliza o texto dentro dos artigos */
+    }   
+
+/*image stuff, made by me and not used*/
+    .image{
+        width: 100px;
+        height: 100px;
+    }
+
+/*timetable for schedule part*/
+    .container-timetable{
+        gap:150px;/*this overrides the gap:20px on the container texto generico only when we add container-timetable to the class */ 
+        text-align: left;/*same here but with the text alignment*/
+        justify-content: center;
+    }
+
+/*box that can be put around images or blocks of text on divs like on equipa*/
+    .image-box{
+        display: flex; /* Ativa o layout flexível */
+        background-color: #343a40; /* Cor de fundo escura */
+        color: white; /* Cor do texto */
+        padding: 40px 20px; /* Espaçamento interno */
+        flex-wrap: wrap; /* Permite que os itens fiquem responsivos */
+        border-radius: 50px;
+    }
+
+    .image-box-class{
+        display: flex; /* Ativa o layout flexível */
+        flex-direction: column;
+        background-color: #343a40; /* Cor de fundo escura */
+        color: white; /* Cor do texto */
+        padding: 20px 50px; /* Espaçamento interno */
+        flex-wrap: wrap; /* Permite que os itens fiquem responsivos */
+        border-radius: 20px;
+    }
+
+    .image-box-subscribe a {
+        display: flex; /* Ativa o layout flexível */
+        flex-direction: column;
+        background-color: #57626d; /* Cor de fundo escura */
+        color: white; /* Cor do texto */
+        padding: 5px 5px; /* Espaçamento interno */
+        flex-wrap: wrap; /* Permite que os itens fiquem responsivos */
+        border-radius: 10px;
+        transition: background 0.3s;
+        text-decoration: none;
+    }
+    .image-box-subscribe a:hover{
+        background-color: #0056b3;
+    }
+
+    .image-box-title{
+        display: flex; /* Ativa o layout flexível */
+        flex-direction: column;
+        background-color: #343a40; /* Cor de fundo escura */
+        color: white; /* Cor do texto */
+        padding:10px 15px; /* Espaçamento interno */
+        flex-wrap: wrap; /* Permite que os itens fiquem responsivos */
+        border-radius: 20px;
+    }
+
+/*this is the style for a background*/
+    .background-image{
+        position:fixed;
+        left: 0;
+        top:0;
+        z-index: -1;
+        width:100%;
+        height:100%;
+    }
