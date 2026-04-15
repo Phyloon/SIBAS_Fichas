@@ -229,3 +229,76 @@ td span {
 .text-center {
     text-align: center; /* Alinha o texto ao centro */
 }
+
+/* Caixa de confirmação de eliminação*/
+.caixa-apagar{
+    width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+/*Icone de alerta*/
+.icone-alerta{
+    font-size: 36px;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+/*texto da pergunta*/
+.caixa-apagar p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/*Informações do cliente*/
+.info-cliente{
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/*Área dos botões*/
+.botoes{
+    margin-top: 20px;
+}
+
+/*Button common style*/
+.botao-cancelar,.botao-confirmar{
+    padding: 8px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/*Botão Não*/
+.botao-cancelar{
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    background-color: transparent;
+}
+
+/*Botão Sim*/
+.botao-confirmar{
+    border: none;
+    color: white;
+    background-color: #495057;
+}
+
+/*Botão hover*/
+.botao-cancelar:hover{
+    background-color: #f1f1f1;
+}
+.botao-confirmar:hover{
+    background-color: #343a40;
+}
+
+/*Espaço entre icone e texto*/
+.me-2{
+    margin-right:0.5rem;
+}
+
