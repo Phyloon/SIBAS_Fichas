@@ -1,0 +1,1 @@
+SELECT nrSocio, nome, dataInscricao FROM Socio

@@ -1,0 +1,1 @@
+SELECT nrSocio, dataInscricao, dataAprovacao, codModPagamento FROM Socio WHERE dataInscricao < '2023-12-01' ORDER BY codModPagamento ASC;SELECT nrSocio, dataInscricao, dataAprovacao, DATEDIFF(dataInscricao, dataAprovacao) AS nrDiasAprovacao FROM Socio WHERE dataAprovacao IS NOT NULL ORDER BY nrDiasAprovacao DESC;

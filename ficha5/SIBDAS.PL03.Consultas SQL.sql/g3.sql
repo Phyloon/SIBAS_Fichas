@@ -1,0 +1,1 @@
+SELECT MIN(nrIDCivil) AS menorID, MAX(nrIDCivil) AS maiorID FROM Socio;

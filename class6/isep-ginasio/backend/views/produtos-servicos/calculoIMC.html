@@ -53,9 +53,71 @@
         <!--Conteúdo Principal-->
         <main class="content">
             <section>
-                <h2>IsepGym</h2>
-                <p>Escolhe uma opção no menu lateral para continuar</p>
+                <h2 onmouseover="console.log('Ben-vindo ao Cálculo de IMC do ISEP')">Cálculo de IMC</h2>
+                <p>Esta funcionalidade permite calcular o Índice de Massa Corporal (IMC), uma medida utilizada para avaliar se
+                    o peso de uma pessoa está adewuado à sua altura.</p>
             </section>
         </main>
+
+        <div class="form-wrapper">
+            <h2><strong><i class="fa-solid fa-heart-pulse"> Calculadora de IMC</i></strong></h2>
+            <hr>
+
+            <form>
+                <div class="form-group">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" name="peso">
+                </div>
+                <div class="form-group">
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" id="altura" name="altura">
+                </div>
+                <div class="form-group">
+                    <label>Resultado:</label><br>
+                    <span id="indicadorIMC"> <!-- texto será atualizado dinamicamente --></span>
+                </div>
+            </form>
+        </div>
+        <script> 
+            console.log("Engenharia Biomédica")
+            const pesoInput = document.getElementById("peso");
+            const alturaInput = document.getElementById("altura");
+            const indicadorIMC = document.getElementById("indicadorIMC");
+            function calcularIMC(peso, altura){
+                return peso/(altura*altura);
+            }
+
+            function verificarIMC(imc) {
+                if (imc < 18.5) {
+                    return { texto: "Abaixo do peso", cor: "abaixoPeso"}
+                } else if (imc<24.9) {
+                    return {texto:"Peso normal", cor:"pesoNormal"}
+                } else if (imc<29.9) {
+                    return {texto: "Sobrepeso", cor:"Sobrepeso"}
+                } else {
+                    return {texto:"Obeso", cor:"Obeso"}
+                }
+            }
+
+            function atualizarIndicadorIMC() {
+                const peso = parseFloat(pesoInput.value);
+                const altura = parseFloat(alturaInput.value);
+
+                if (isNaN(peso) || isNaN(altura) || altura === 0) {
+                    indicadorIMC.textContent = "";
+                    indicadorIMC.className = "";
+                    return;
+                }
+
+                const imc = calcularIMC(peso, altura);
+                const resultadoIMC = verificarIMC(imc);
+
+                indicadorIMC.textContent = resultadoIMC.texto;
+                indicadorIMC.className = resultadoIMC.cor;
+            }
+
+            pesoInput.addEventListener("input", atualizarIndicadorIMC);
+            alturaInput.addEventListener("input", atualizarIndicadorIMC); 
+        </script>
     </body>
 </html>

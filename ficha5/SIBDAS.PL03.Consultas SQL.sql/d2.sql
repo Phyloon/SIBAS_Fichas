@@ -1,0 +1,1 @@
+SELECT * FROM ModalidadePagamento WHERE codModalidadePagamento IN(3, 5, 9);

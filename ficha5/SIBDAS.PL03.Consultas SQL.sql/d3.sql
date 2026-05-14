@@ -1,0 +1,1 @@
+SELECT * FROM ModalidadePagamento WHERE codModalidadePagamento NOT IN(1, 6, 11);

@@ -1,0 +1,1 @@
+SELECT COUNT(distinct codModPagamento) AS totalModalidades FROM Socio;

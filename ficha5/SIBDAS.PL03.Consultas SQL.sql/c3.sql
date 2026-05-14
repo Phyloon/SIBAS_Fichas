@@ -1,0 +1,1 @@
+SELECT DISTINCT codModPagamento FROM Socio

@@ -1,0 +1,1 @@
+SELECT codModPagamento, COUNT(*) AS numeroSociosCorrespondente FROM Socio GROUP BY codModPagamento HAVING COUNT(*) >3;

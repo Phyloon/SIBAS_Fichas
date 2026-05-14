@@ -1,0 +1,1 @@
+SELECT * FROM Socio WHERE nrSocio >200811 AND nrSocio <601007 ORDER BY nrSocio ASC;

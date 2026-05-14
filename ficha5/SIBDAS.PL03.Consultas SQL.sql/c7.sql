@@ -1,0 +1,1 @@
+SELECT nrSocio, dataInscricao, dataAprovacao, DATEDIFF(dataInscricao, dataAprovacao) AS nrDiasAprovacao FROM Socio;
