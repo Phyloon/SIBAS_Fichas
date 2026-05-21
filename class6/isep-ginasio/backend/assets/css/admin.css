@@ -340,4 +340,18 @@ td span {
 } 
 
 
+.abaixoPeso{
+    color:green;
+}
 
+.pesoNormal{
+    color:green;
+}
+
+.sobrePeso{
+    color:Red;
+}
+
+.obeso{
+    color:red;
+}
